@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Angry Birds</title>
-    <link rel="icon" type="png" href="https://img.icons8.com/color/48/000000/bad-piggies.png"/>
-
+    <title>Profile</title>
     <style>
+        body{
+            background-color:wheat;
+            font-size: large;
+        }
         .listitem{
             display: inline;
             margin-left: 30px;
@@ -28,7 +29,7 @@
         .navigator{
             display: flex;
             justify-content: space-between;
-            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Permanent Marker', cursive;
             border-bottom:firebrick solid 5px;
             border-radius: 20px;
         }
@@ -40,17 +41,62 @@
             background-color: teal;
             color: white;
         }
-        .img1{
-            height: 100vh;
-            background-image: url(https://wallsdesk.com/wp-content/uploads/2016/11/Angry-Birds-HD.jpg);
-            background-size: cover;
-           
+        .find_me a{
+            text-decoration: none;
+            color: teal;
+            font-weight: bolder;
+            
         }
-        .img2{
-            height: 100vh;
-            background-image: url(https://www.blurayauthority.com/wp-content/uploads/2019/11/angrybirds2hd_pub.jpg);
-            background-size: cover;
-
+        .find_me a:hover{
+            color: white;
+            border: solid tan 2px;
+            border-radius: 20px;
+            background-color: teal;
+            padding: 10px
+        }
+        .home{
+            margin-top: 50px;
+        }
+        .image img{
+            float: right;
+            margin-right: 100px;
+            border: double teal 15px;
+            border-radius: 200px;
+        }
+        .text{
+            margin-left: 100px;
+            font-family: Varela Round, sans-serif;
+            font-variant: small-caps;
+            font-weight: bolder;
+        }
+        .about{
+            background-color: slategray;
+            margin-top: 100px;
+            padding: 40px;
+            
+        }
+        .about h1, .about p{
+            text-align: center;
+            font-family: Varela Round, sans-serif;
+            font-variant: small-caps;
+        }
+        table{
+            margin: auto;
+        }
+        .Hobbies td{
+            margin:75px;
+            font-weight: bolder;
+            font-family: Varela Round, sans-serif;
+            font-variant: normal;
+            text-align: center;
+            padding: 50px;
+        }
+        .Hobbies h1{
+            text-align: center;
+            font-weight: bolder;
+            font-family: Varela Round, sans-serif;
+            font-variant: small-caps ;
+            
         }
         
     </style>
@@ -58,18 +104,67 @@
 <body>
     <div class="navigator">
         <div class="angry-birds">
-            <h3>ANGRY BIRDS</h3>
+            <h3>Advay</h3>
         </div>
         <div class="list">
             <ul>
-                <a href="https://www.youtube.com/watch?v=QRmKa7vvct4"><li class="listitem">Watch Trailer</li></a>
-                <a href="https://www.angrybirds.com/"><li class="listitem">About</li>
-                <a href="http://www.angrybirdsgames.com/"><li class="listitem">Play A Game</li></a>
+                <a href="#home"><li class="listitem">home</li></a>
+                <a href="#about"><li class="listitem">about</li>
+                <a href="#hobbies"><li class="listitem">hobbies</li>
+                <a href="#projects"><li class="listitem">Projects</li></a>
             </ul>
-        </div class="list">
+        </div >
+        </div>
+    <div class="home" id="home">
+        <div class="image">
+            <img src="istock_000001168352_small.jpg" alt="" height="200px">
+        </div>
+        <div class="text">
+        <h1>Advay Nathany</h1>
+        <h3>Web Developer</h3>
+        <p>Hey! I am Advay, an aaspiring Environmental Scientist aiming to cure the earth from global warming.</br> I like Horse Riding, Coding, Gardening and Robotics.</p>
+        <p>Find my <span class="find_me"><a href="https://campk12.com/profile/advay.nathany">Camp K12</a></span> Profile and <span class="find_me"><a href="https://github.com/Advay0907">Github</a></span> account for some of my cool Projects</p>
     </div>
-    <div class="img1"></div>
-    <div class="img2"></div>
+    </div>
+    <div class="about " id="about">
+        <h1>About</h1>
+        <p>I'm a student at the Calcutta International School</p>
+        <p>I am a passionate creator, who loves doing something new. </br>I love basketball, horseback Riding, and Bicycling.</br> My motto: "A Day Without Learning is a Day Wasted"</p>
+    </div>
+    <div class="Hobbies" id="hobbies">
+        <h1>My Hobbies</h1>
+    <table>
+        <tr>
+            <td>        <img class="row1 hobby" src="https://cdn0.iconfinder.com/data/icons/website-design-4/467/window_screen_coding_icon-128.png" alt=""></br>
+                        <h2>Programming</h2>
+            </td>
+            <td>        <img class="row2 hobby" src="https://cdn4.iconfinder.com/data/icons/web-essential-4/64/45-web_essential-128.png" alt=""></br>
+                <h2>Science</h2>            </td>
+            <td>        <img class="row3 hobby" src="https://cdn3.iconfinder.com/data/icons/animals-105/150/icon_animal_cavalo-128.png" alt=""></br></br>
+                <h2>Horses</h2>            </td>        
+        </tr>
+        <tr>
+            <td>        <img class="row4 hobby" src="https://cdn2.iconfinder.com/data/icons/new-year-resolutions/64/resolutions-21-128.png" alt=""></br>
+                <h2>Travel</h2>            </td>
+            <td>        <img class="row5 hobby" src="https://cdn3.iconfinder.com/data/icons/technology-1-1/512/technology-machine-electronic-device-10-128.png" alt=""></br>
+                <h2>Building</h2>            </td>
+            <td>        <img class="row6 hobby"src="https://cdn0.iconfinder.com/data/icons/analytic-investment-and-balanced-scorecard/512/192_presentation_Blackboard_powerpoint_report-128.png" alt=""></br>
+                <h2>Teaching</h2>            </td>        
+        </tr>
+        <tr>
+            <td>        <img class="row4 hobby" src="https://img.icons8.com/dusk/2x/animation.png" alt=""></br>
+                <h2>Disney</h2>            </td>
+            <td>        <img class="row5 hobby" src="https://cdn2.iconfinder.com/data/icons/international-food/64/fried_rice-128.png" alt=""></br>
+                <h2>Cooking</h2>            </td>
+            <td>        <img class="row6 hobby"src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/long-arrow-right-512.png" height="128px" width="128px" alt=""></br>
+                <h2>And It goes on...</h2>            </td>        
+        </tr>
+    </table>
+    </div>
+        
+    <div class="Projects" id="projects">
+
+    </div>
     
 </body>
 </html>
